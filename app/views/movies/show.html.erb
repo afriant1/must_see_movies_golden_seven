@@ -1,0 +1,22 @@
+<h1>Movie #<%= @movie.id %></h1>
+
+<table>
+<dt>Title</dt>
+<dd><%=@movie.title%></dd>
+
+<dt>Year</dt>
+<dd><%= @movie.year %></dd>
+
+<dt>Duration</dt>
+<dd><%= @movie.duration %></dd>
+
+<dt>Description</dt>
+<dd><%= @movie.description %></dd>
+
+<dt>Director ID</dt>
+<dd>10</dd>
+
+<dt>Image</dt>
+<dd><img src="<%= @movie.image_url %>" width="320"></dd>
+
+</table>
