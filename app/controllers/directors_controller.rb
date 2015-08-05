@@ -39,7 +39,7 @@ class DirectorsController < ApplicationController
       d.dob = params["the_dob"]
       d.image_url = params["image_url"]
       d.save
-      redirect_to("http://localhost:3000/directors")
+      render("show.html.erb")
   end
 
 

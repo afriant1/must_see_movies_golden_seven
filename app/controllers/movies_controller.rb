@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
     m.description = params["description"]
     m.image_url = params["image_url"]
     m.save
-    redirect_to("http://localhost:3000/movies")
+    redirect_to("http://localhost:3000/movies/":id)
   end
 
   def destroy
