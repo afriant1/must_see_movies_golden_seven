@@ -8,7 +8,6 @@ class MoviesController < ApplicationController
   end
 
   def new_form
-    render("new_form.html.erb")
   end
 
   def create_row
@@ -19,18 +18,16 @@ class MoviesController < ApplicationController
     m.description = params["description"]
     m.image_url = params["image_url"]
     m.save
-    redirect_to("http://localhost:3000/movies/":id)
+    redirect_to("http://localhost:3000/movies")
   end
 
   def destroy
     @movie = Movie.find(params["id"])
     @movie.destroy
-    render("destroy.html.erb")
   end
 
   def edit_form
     @movie = Movie.find(params["id"])
-    render("edit_form.html.erb")
   end
 
   def update_row
@@ -43,6 +40,4 @@ class MoviesController < ApplicationController
     m.save
     redirect_to("http://localhost:3000/movies")
   end
-
-
 end

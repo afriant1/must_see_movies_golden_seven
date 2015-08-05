@@ -8,7 +8,6 @@ class DirectorsController < ApplicationController
   end
 
   def new_form
-    render("new_form.html.erb")
   end
 
   def create_row
@@ -24,12 +23,10 @@ class DirectorsController < ApplicationController
   def destroy
     @director = Director.find(params["id"])
     @director.destroy
-    render("destroy.html.erb")
   end
 
   def edit_form
     @director = Director.find(params["id"])
-    render("edit_form.html.erb")
   end
 
   def update_row
@@ -39,8 +36,6 @@ class DirectorsController < ApplicationController
       d.dob = params["the_dob"]
       d.image_url = params["image_url"]
       d.save
-      render("show.html.erb")
+      redirect_to("http://localhost:3000/directors")
   end
-
-
 end

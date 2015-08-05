@@ -1,16 +1,27 @@
 <h1>Actor #<%= @actor.id %></h1>
 
 <table>
-<dt>Dob</dt>
-<dd><%=@actor.dob%></dd>
 
-<dt>Name</dt>
-<dd><%= @actor.name %></dd>
+<tr>
+<td valign="top" colspan = "2">Name:</td>
+<td valign="top"><%=@actor.name%></td>
+</tr>
 
-<dt>Bio</dt>
-<dd><%= @actor.bio %></dd>
+<tr>
+<td valign="top" colspan = "2">Dob:</td>
+<td valign="top"><%=@actor.dob%></td>
+</tr>
 
-<dt>Image</dt>
-<dd><img src="<%= @actor.image_url %>" width="320"></dd>
+<tr>
+<td valign="top" colspan = "2">Bio:</td>
+<td valign="top"><%=@actor.bio%></td>
+</tr>
+
+<tr>
+<td valign="top" colspan = "2">Image:</td>
+<td valign="top"><img src="<%= @actor.image_url %>" width="320"></td>
+</tr>
 
 </table>
+
+<button><a href="http://localhost:3000/actors"</a>GO BACK</button>

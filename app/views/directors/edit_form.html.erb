@@ -3,11 +3,6 @@
 <form action="http://localhost:3000/update_director/<%= @director.id %>">
 
 <div>
-Dob
-    <input `id="director_dob" type="text" name="the_dob" value="<%= @director.dob %>">
-</div>
-
-<div>
 Name
     <input `id="director_name" type="text" name="the_name" value="<%= @director.name %>">
 </div>
@@ -15,6 +10,11 @@ Name
 <div>
 Bio
     <input `id="director_bio" type="text" name="the_bio" value="<%= @director.bio %>">
+</div>
+
+<div>
+Dob
+    <input `id="director_dob" type="text" name="the_dob" value="<%= @director.dob %>">
 </div>
 
 <div>

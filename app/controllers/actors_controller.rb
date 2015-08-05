@@ -8,7 +8,6 @@ class ActorsController < ApplicationController
   end
 
   def new_form
-    render("new_form.html.erb")
   end
 
   def create_row
@@ -24,12 +23,10 @@ class ActorsController < ApplicationController
   def destroy
     @actor = Actor.find(params["id"])
     @actor.destroy
-    render("destroy.html.erb")
   end
 
   def edit_form
     @actor = Actor.find(params["id"])
-    render("edit_form.html.erb")
   end
 
   def update_row
@@ -41,6 +38,4 @@ class ActorsController < ApplicationController
       a.save
       redirect_to("http://localhost:3000/actors")
   end
-
-
 end

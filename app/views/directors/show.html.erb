@@ -1,16 +1,28 @@
 <h1>Director #<%= @director.id %></h1>
 
 <table>
-<dt>Dob</dt>
-<dd><%=@director.dob%></dd>
 
-<dt>Name</dt>
-<dd><%= @director.name %></dd>
+<tr>
+<td valign="top" colspan = "2">Name:</td>
+<td valign="top"><%=@director.name%></td>
+</tr>
 
-<dt>Bio</dt>
-<dd><%= @director.bio %></dd>
+<tr>
+<td valign="top" colspan = "2">Dob:</td>
+<td valign="top"><%=@director.dob%></td>
+</tr>
 
-<dt>Image</dt>
-<dd><img src="<%= @director.image_url %>" width="320"></dd>
+<tr>
+<td valign="top" colspan = "2">Bio:</td>
+<td valign="top"><%=@director.bio%></td>
+</tr>
+
+<tr>
+<td valign="top" colspan = "2">Image:</td>
+<td valign="top"><img src="<%= @director.image_url %>" width="320"></td>
+</tr>
 
 </table>
+
+<button><a href="http://localhost:3000/directors"</a>GO BACK</button>
+

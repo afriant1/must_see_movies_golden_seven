@@ -1,19 +1,32 @@
 <h1>Movie #<%= @movie.id %></h1>
 
 <table>
-<dt>Title</dt>
-<dd><%=@movie.title%></dd>
 
-<dt>Year</dt>
-<dd><%= @movie.year %></dd>
+<tr>
+<td valign="top" colspan = "2">Title:</td>
+<td valign="top"><%=@movie.title%></td>
+</tr>
 
-<dt>Duration</dt>
-<dd><%= @movie.duration %></dd>
+<tr>
+<td valign="top" colspan = "2">Year:</td>
+<td valign="top"><%=@movie.year%></td>
+</tr>
 
-<dt>Description</dt>
-<dd><%= @movie.description %></dd>
+<tr>
+<td valign="top" colspan = "2">Duration:</td>
+<td valign="top"><%=@movie.duration%></td>
+</tr>
 
-<dt>Image</dt>
-<dd><img src="<%= @movie.image_url %>" width="320"></dd>
+<tr>
+<td valign="top" colspan = "2">Description:</td>
+<td valign="top"><%=@movie.description%></td>
+</tr>
+
+<tr>
+<td valign="top" colspan = "2">Image:</td>
+<td valign="top"><img src="<%= @movie.image_url %>" width="320"></td>
+</tr>
 
 </table>
+
+<button><a href="http://localhost:3000/movies"</a>GO BACK</button>
